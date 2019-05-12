@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
-public class OrderForm2OrderDTO {
+public class OrderForm2OrderDTOConverter {
 
     public static OrderDTO convert(OrderForm orderForm){
         Gson gson = new Gson();
@@ -25,8 +25,9 @@ public class OrderForm2OrderDTO {
 
         List<OrderDetail> orderDetailList = new ArrayList<>();
         try {
-            gson.fromJson(orderForm.getItems(),
-                    new TypeToken<List<OrderDetail>>(){}.getType());
+            orderDetailList = gson.fromJson(orderForm.getItems(),
+                    new TypeToken<List<OrderDetail>>(){
+                    }.getType());
         }catch (Exception e){
             log.error("【json转换】错误, string={}", orderForm.getItems());
             throw new OrderException(ResultEnum.PARAM_ERROR);
