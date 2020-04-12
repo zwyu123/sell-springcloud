@@ -1,0 +1,3 @@
+com\imooc\product\common\ProductOutput.class
+com\imooc\product\common\DecreaseStockInput.class
+com\imooc\product\common\ProductOutput$ProductOutputBuilder.class

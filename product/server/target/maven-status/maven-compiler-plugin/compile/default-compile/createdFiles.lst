@@ -1,0 +1,9 @@
+com\imooc\product\enums\ResultEnum.class
+com\imooc\product\vo\ProductVO.class
+com\imooc\product\exception\ProductException.class
+com\imooc\product\service\ProductService.class
+com\imooc\product\vo\ProductVO$ProductVOBuilder.class
+com\imooc\product\ProductApplication.class
+com\imooc\product\controller\ProductController.class
+com\imooc\product\entity\Product.class
+com\imooc\product\repository\ProductRepository.class
